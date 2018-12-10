@@ -14,3 +14,5 @@ libPerso.dylib: programmeC.o client.o
 main: main.c 
 	gcc -L. -lPerso -o main main.c
 
+clean:
+	@rm -f libPerso.dylib  programmeC.o client.o main
